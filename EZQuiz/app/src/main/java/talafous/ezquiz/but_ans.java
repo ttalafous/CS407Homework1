@@ -39,16 +39,16 @@ public class but_ans extends Fragment {
 
         final Button submitbut = (Button) view.findViewById(R.id.submitbut);
         final Button quitbut = (Button) view.findViewById(R.id.quitbut);
-        final Button radio1 = (Button) view.findViewById(R.id.radioButton1);
-        final Button radio2 = (Button) view.findViewById(R.id.radioButton2);
+        final Button choice1 = (Button) view.findViewById(R.id.choiceButton1);
+        final Button choice2 = (Button) view.findViewById(R.id.choiceButton2);
         final EditText editText = (EditText) view.findViewById(R.id.editText);
         editText.setVisibility(View.GONE);
         editText.setEnabled(false);
         editText.setClickable(false);
-        radio1.setVisibility(View.GONE);
-        radio2.setVisibility(View.GONE);
-        radio1.setClickable(false);
-        radio2.setClickable(false);
+        choice1.setVisibility(View.GONE);
+        choice2.setVisibility(View.GONE);
+        choice1.setClickable(false);
+        choice2.setClickable(false);
 
         submitbut.setOnClickListener(
                 new View.OnClickListener(){
@@ -75,20 +75,20 @@ public class but_ans extends Fragment {
                             editText.setClickable(false);
                             editText.setEnabled(false);
                             editText.setVisibility(View.GONE);
-                            radio1.setVisibility(View.VISIBLE);
-                            radio2.setVisibility(View.VISIBLE);
-                            radio1.setClickable(true);
-                            radio2.setClickable(true);
+                            choice1.setVisibility(View.VISIBLE);
+                            choice2.setVisibility(View.VISIBLE);
+                            choice1.setClickable(true);
+                            choice2.setClickable(true);
                             inc++;
                         } else {
                             submitbut.setText("Retry?");
-                            radio1.setVisibility(View.GONE);
-                            radio2.setVisibility(View.GONE);
-                            radio1.setClickable(false);
-                            radio2.setClickable(false);
+                            choice1.setVisibility(View.GONE);
+                            choice2.setVisibility(View.GONE);
+                            choice1.setClickable(false);
+                            choice2.setClickable(false);
                             inc++;
                         }
-                        submitbutClicked(v);
+                        submitbutClicked();
                     }
                 }
         );
@@ -96,12 +96,12 @@ public class but_ans extends Fragment {
         quitbut.setOnClickListener(
                 new View.OnClickListener(){
                     public void onClick(View v){
-                        quitbutClicked(v);
+                        quitbutClicked();
                     }
                 }
         );
 
-        radio1.setOnClickListener(
+        choice1.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View v) {
                         q1 = true;
@@ -109,7 +109,7 @@ public class but_ans extends Fragment {
                 }
         );
 
-        radio2.setOnClickListener(
+        choice2.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View v) {
                         q1 = false;
@@ -120,11 +120,11 @@ public class but_ans extends Fragment {
         return view;
     }
 
-    public void submitbutClicked(View view){
+    public void submitbutClicked(){
         activityCommander.clicked(1, q1, q2);
     }
 
-    public void quitbutClicked(View view){
+    public void quitbutClicked(){
         activityCommander.clicked(2, q1, q2);
     }
 

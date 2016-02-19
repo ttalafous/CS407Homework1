@@ -1,6 +1,5 @@
 package talafous.ezquiz;
 
-import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
