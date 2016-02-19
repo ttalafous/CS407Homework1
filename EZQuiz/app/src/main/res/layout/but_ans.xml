@@ -10,6 +10,8 @@
         android:text="@string/nextbutton"
         android:layout_above="@+id/quitbut"
         android:layout_alignParentRight="true"
+        android:textColor="#000000"
+        android:background="#ffffff"
         android:layout_alignParentEnd="true" />
 
     <Button
@@ -19,6 +21,8 @@
         android:id="@+id/quitbut"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:textColor="#000000"
+        android:background="#ffffff"
         android:layout_alignParentEnd="true" />
 
     <Button
@@ -56,6 +60,7 @@
         android:visibility="gone"
         android:id="@+id/editText"
         android:width="200dp"
+        android:textStyle="bold"
         android:background="#ffffff"
         android:gravity="center_vertical|center|center_horizontal"
         android:height="200dp"
