@@ -67,8 +67,8 @@ public class but_ans extends Fragment {
                             inc++;
                         } else if(inc == 2) {
                             submitbut.setText("Submit");
-                            if(editText.getText().equals("Futurama Fry") || editText.getText().equals("futurama fry")
-                                    || editText.getText().equals("futurama Fry") || editText.getText().equals("Futurama fry")) {
+                            if(editText.getText().toString().equals("Futurama Fry") || editText.getText().toString().equals("futurama fry")
+                                    || editText.getText().toString().equals("futurama Fry") || editText.getText().toString().equals("Futurama fry")) {
                                 q2 = true;
                             }
                             editText.setText("");
@@ -79,14 +79,11 @@ public class but_ans extends Fragment {
                             radio2.setVisibility(View.VISIBLE);
                             radio1.setClickable(true);
                             radio2.setClickable(true);
-                            radio1.setEnabled(true);
                             inc++;
                         } else {
                             submitbut.setText("Retry?");
                             radio1.setVisibility(View.GONE);
                             radio2.setVisibility(View.GONE);
-                            radio1.setEnabled(false);
-                            radio2.setEnabled(false);
                             radio1.setClickable(false);
                             radio2.setClickable(false);
                             inc++;
@@ -107,8 +104,6 @@ public class but_ans extends Fragment {
         radio1.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View v) {
-                        radio1.setEnabled(true);
-                        radio2.setEnabled(false);
                         q1 = true;
                     }
                 }
@@ -117,8 +112,6 @@ public class but_ans extends Fragment {
         radio2.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View v) {
-                        radio2.setEnabled(true);
-                        radio1.setEnabled(false);
                         q1 = false;
                     }
                 }

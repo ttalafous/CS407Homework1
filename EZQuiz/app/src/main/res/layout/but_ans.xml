@@ -21,10 +21,10 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <RadioButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="gone"
+        android:visibility="visible"
         android:text="@string/radio2"
         android:id="@+id/radioButton2"
         android:checked="false"
@@ -36,10 +36,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <RadioButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="gone"
+        android:visibility="visible"
         android:text="@string/radio1"
         android:id="@+id/radioButton1"
         android:layout_above="@+id/radioButton2"
@@ -53,6 +53,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:id="@+id/editText"
         android:width="200dp"
         android:background="#ffffff"
