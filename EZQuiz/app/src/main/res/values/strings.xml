@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EZQuiz</string>
+    <string name="app_name">EZ Quiz</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -10,5 +10,5 @@
     <string name="changetext2">""</string>
     <string name="radio2">Android Program</string>
     <string name="radio1">Walk Into Mordor</string>
-    <string name="edittext">Your Text Here</string>
+    <string name="edittext">Your Answer Here</string>
 </resources>

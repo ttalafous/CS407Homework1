@@ -16,7 +16,7 @@ public class but_ans extends Fragment {
 
     int inc = 1;
     boolean q1 = false;
-    boolean q2 = true;
+    boolean q2 = false;
 
     public interface butansListener{
         void clicked(int num, boolean question1, boolean question2);
@@ -61,7 +61,7 @@ public class but_ans extends Fragment {
                         } else if(inc == 1){
                             submitbut.setText("Submit");
                             editText.setVisibility(View.VISIBLE);
-                            editText.setText("Your Text Here");
+                            editText.setText("Your Answer Here");
                             editText.setClickable(true);
                             editText.setEnabled(true);
                             inc++;
