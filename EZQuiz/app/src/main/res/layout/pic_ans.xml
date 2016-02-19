@@ -7,7 +7,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/changetext"
-        android:id="@+id/changeText"
+        android:id="@+id/changeText1"
         android:gravity="bottom|center_horizontal"
         android:maxWidth="50dp"
         android:width="200dp"
@@ -17,5 +17,20 @@
         android:height="50dp"
         android:textColor="#ffffff"
         android:textSize="40sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/changetext2"
+        android:id="@+id/changeText2"
+        android:gravity="bottom|center_horizontal"
+        android:maxWidth="50dp"
+        android:width="200dp"
+        android:height="50dp"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

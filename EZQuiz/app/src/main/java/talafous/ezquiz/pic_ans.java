@@ -12,8 +12,9 @@ import android.widget.TextView;
 
 public class pic_ans extends Fragment {
 
-    private static TextView changeText;
     private static View view;
+    private static TextView changeText1;
+    private static TextView changeText2;
     private Drawable doge;
     private Drawable keanu;
     private Drawable mordor;
@@ -23,7 +24,8 @@ public class pic_ans extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.pic_ans, container, false);
-        changeText = (TextView) view.findViewById(R.id.changeText);
+        changeText1 = (TextView) view.findViewById(R.id.changeText1);
+        changeText2 = (TextView) view.findViewById(R.id.changeText2);
         doge = this.getResources().getDrawable(R.drawable.doge);
         keanu = this.getResources().getDrawable(R.drawable.keanu);
         mordor = this.getResources().getDrawable(R.drawable.mordor);
@@ -32,21 +34,23 @@ public class pic_ans extends Fragment {
         return view;
     }
 
-    public void setChangeText(String change) {
-        changeText.setText(change);
-    }
-
-    public void changePic(int num) {
+    public void changePic(int num, int score) {
         if (num == 1) {
             view.setBackground(doge);
+            changeText1.setText("");
+            changeText2.setText("");
         }
-        if (num == 2) {
+        else if (num == 2) {
             view.setBackground(futuramafry);
+            changeText1.setText("??????");
         }
-        if (num == 3) {
+        else if (num == 3) {
             view.setBackground(mordor);
+            changeText1.setText("");
+            changeText2.setText("??????");
         } else {
             view.setBackground(keanu);
+            changeText2.setText(score + " / 2!");
         }
     }
 }

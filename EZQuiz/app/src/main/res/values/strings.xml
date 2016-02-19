@@ -6,5 +6,9 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="q1button">Start!</string>
     <string name="quitbut">Quit</string>
-    <string name="changetext"></string>
+    <string name="changetext">""</string>
+    <string name="changetext2">""</string>
+    <string name="radio2">Android Program</string>
+    <string name="radio1">Walk Into Mordor</string>
+    <string name="edittext">Your Text Here</string>
 </resources>
